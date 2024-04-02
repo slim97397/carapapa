@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+#Padre{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/originals/33/1d/34/331d344c012c1ff4307858f8c9f38706.gif);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        background-image: url(../img/fondo1.jpg);
+        background-position: center;
+        background-size: cover;
+        image-rendering: auto;
+    }
+    30% {
+        background-image: url(../img/fondo2.jpg);
+        background-position: center;
+        background-size: cover;
+        image-rendering: auto;
+      }
+    60% {
+        background-image: url(../img/fondo3.jpg);
+        background-position: center;
+        background-size: cover;
+        image-rendering: auto;
+    }
+
+    100% {
+        background-image: url(../img/fondo4.jpg);
+        background-position: center;
+        background-size: cover;
+        image-rendering: auto;
+    }
+  }
+
+  #Padre:hover .cuerpo{
+    transform: rotate(520deg) translate3d(52px, -80px, -145px);
+}
+
+#Padre:hover .ojo-izq{
+    transform: scale(1.5);
+}
+
+#Padre:hover .ojo-der{
+    transform: rotate(450deg);
+}
+
+#Padre:hover .sombrero{
+    transform: rotateY(1800deg) rotateZ(900deg);
+    top: 150px;
+}
+
+#Padre:hover .nariz{
+    transform: rotateX(60deg) rotateY(30deg);
+}
+
+#Padre:hover .bigote{
+    transform: rotate(1800deg);
+}
+
+#Padre:hover .oreja-der{
+    transform: rotate(2700deg);
+    left: 200px;
+    right: 265px;
+}
+
+#Padre:hover .oreja-izq{
+    transform: rotate(270deg);
+    left: -200px;
+    right: -165px;
+}
+
+#Padre:hover .pie-izq{
+    left: 200px;
+    right: 265px;
+}
+
+#Padre:hover .pie-der{
+    left: -300px;
+    right: -165px;
+}
+
+
+.cuerpo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 250px;
+    transition: 1s;
+}
+
+.sombrero{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 153px;
+    transition: 1s;
+}
+
+.ojo-izq{
+    position: absolute;
+    left: -80px;
+    right: 0;
+    margin: 0 auto;
+    top: 310px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.ojo-der{
+    position: absolute;
+    left: 0;
+    right: -60px;
+    margin: 0 auto;
+    top: 310px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.nariz{
+    position: absolute;
+    left: 0;
+    right: 7px;
+    margin: 0 auto;
+    top: 370px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.bigote{
+    position: absolute;
+    left: 0;
+    right: 7px;
+    margin: 0 auto;
+    top: 495px;
+    z-index: 1;
+    transition: 1s;
+}
+
+.oreja-izq{
+    position: absolute;
+    left: -260px;
+    right: 0;
+    margin: 0 auto;
+    top: 290px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.oreja-der{
+    position: absolute;
+    left: 260px;
+    right: 0;
+    margin: 0 auto;
+    top: 290px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.pie-izq{
+    position: absolute;
+    left: -160px;
+    right: 0;
+    margin: 0 auto;
+    top: 590px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.pie-der{
+    position: absolute;
+    left: 0;
+    right: -160px;
+    margin: 0 auto;
+    top: 590px;
+    z-index: -1;
+    transition: 1s;
+}
